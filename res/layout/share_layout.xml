@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webView_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="0.2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.80"
+                android:background="#a70000"
+                android:text="Place"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_capture"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:text="Capture"
+                android:background="#a70000"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <RadioButton
+                android:id="@+id/radioButton_church"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.36"
+                android:text="Church"
+                android:textColor="#008000" />
+
+            <RadioButton
+                android:id="@+id/radioButton_disipleship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.46"
+                android:text="PCS"
+                android:textColor="#80b3ff" />
+
+            <RadioButton
+                android:id="@+id/radioButton_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Training"
+                android:textColor="#ff6600" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editText_description"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:ems="3"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:maxLines="1"
+                android:scrollbars="vertical"
+                android:text="Description" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.40"
+                android:background="#a70000"
+                android:text="Reset"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.37"
+                android:text="Submit"
+                android:background="#a70000"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
